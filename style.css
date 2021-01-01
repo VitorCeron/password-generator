@@ -45,6 +45,13 @@ body {
     width: 600px;
 }
 
+.password::placeholder {
+    color: #bbbbbb;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .button {
     background-color: #00ecd8;
     color: #000;
@@ -82,4 +89,31 @@ input:focus {
 
 .button:focus {
     outline: none;
+}
+
+@media (max-width: 1000px) {
+    .div-image {
+        display: none;
+    }
+
+    .phrase {
+        width: 50%;
+        font-size: 25px;
+    }
+
+    .password {
+        width: 90%;
+        margin-left: 3% !important;
+        margin-top: 5%;
+    }
+
+    .button {
+        width: 90% !important;
+        margin-left: 3% !important;
+        margin-top: 5%;
+    }
+
+    .div-buttons {
+        margin: 0;
+    }
 }
